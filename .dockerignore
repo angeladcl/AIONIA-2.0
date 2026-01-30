@@ -1,0 +1,18 @@
+# AIONIA Website
+
+Sitio web corporativo de AIONIA - Transformando operaciones digitales
+
+## Deployment
+
+This project is configured for deployment with Docker using Nginx.
+
+### Docker Build
+
+```bash
+docker build -t aionia-website .
+docker run -p 80:80 aionia-website
+```
+
+### Dokploy Deployment
+
+This repository is configured for automatic deployment to Dokploy using the included Dockerfile.
