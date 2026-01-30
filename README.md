@@ -158,7 +158,7 @@ Este proyecto está configurado para deployment automático en Dokploy usando Do
    - Selecciona "Application"
 
 2. **Configurar Repositorio**
-   - Repository URL: `https://github.com/aloomushi-pixel/aionia-website.git`
+   - Repository URL: `https://github.com/angeladcl/AIONIA-2.0.git`
    - Branch: `main`
    - Build Method: `Dockerfile`
 
