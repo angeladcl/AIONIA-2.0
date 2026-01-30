@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Experimenta nuestras soluciones interactivas - Demos en vivo de todos los servicios de AIONIA">
+    <title>Demos Interactivas - Aionia</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/demos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo-wrapper">
+                <span class="logo-slash">/</span>
+                <div class="logo-text">
+                    <a href="index.html" style="text-decoration: none; color: inherit;">
+                        <span class="logo-char" style="--delay: 0.1s">A</span>
+                        <span class="logo-char" style="--delay: 0.2s">i</span>
+                        <span class="logo-char" style="--delay: 0.3s">o</span>
+                        <span class="logo-char" style="--delay: 0.4s">n</span>
+                        <span class="logo-char" style="--delay: 0.5s">i</span>
+                        <span class="logo-char" style="--delay: 0.6s">a</span>
+                    </a>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="index.html#services">Servicios</a>
+                <a href="demos.html" class="active">Demos</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero demos-hero">
+        <div class="container">
+            <h1 class="hero-title">Experimenta Nuestras Soluciones</h1>
+            <p class="hero-subtitle">Interactúa con demos en vivo de cada módulo y descubre cómo transformamos tu
+                operación digital</p>
+        </div>
+    </section>
+
+    <!-- Demos Navigation -->
+    <section class="demos-nav">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-button active" data-category="servicios">Servicios</button>
+                <button class="tab-button" data-category="automatizacion">Automatización</button>
+                <button class="tab-button" data-category="modulos">Módulos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demos Grid -->
+    <section class="demos-section">
+        <div class="container">
+            <!-- Servicios Tab -->
+            <div class="demos-grid" data-tab="servicios">
+                <div class="demo-card" data-demo="consultoria">
+                    <div class="demo-icon">💡</div>
+                    <h3>Consultoría</h3>
+                    <p>Analiza tu proceso actual y obtén un diagrama optimizado con recomendaciones</p>
+                    <button class="demo-launch-btn">Lanzar Demo</button>
+                    <span class="demo-badge">Interactiva</span>
+                </div>
+
+                <div class="demo-card" data-demo="desarrollo">
+                    <div class="demo-icon">⚙️</div>
+                    <h3>Desarrollo</h3>
+                    <p>Construye tu sistema personalizado arrastrando componentes y visualiza el resultado</p>
+                    <button class="demo-launch-btn">Lanzar Demo</button>
+                    <span class="demo-badge">Interactiva</span>
+                </div>
+
+                <div class="demo-card" data-demo="integracion">
+                    <div class="demo-icon">🔗</div>
+                    <h3>Integración</h3>
+                    <p>Conecta múltiples sistemas y ve cómo se unifica la información en tiempo real</p>
+                    <button class="demo-launch-btn">Lanzar Demo</button>
+                    <span class="demo-badge">Interactiva</span>
+                </div>
+
+                <div class="demo-card" data-demo="soporte">
+                    <div class="demo-icon">🛡️</div>
+                    <h3>Soporte 24/7</h3>
+                    <p>Explora el dashboard de monitoreo proactivo con alertas y resolución automática</p>
+                    <button class="demo-launch-btn">Lanzar Demo</button>
+                    <span class="demo-badge">En Vivo</span>
+                </div>
+            </div>
+
+            <!-- Automatización Tab -->
+            <div class="demos-grid hidden" data-tab="automatizacion">
+                <div class="demo-card" data-demo="automatizacion">
+                    <div class="demo-icon">🤖</div>
+                    <h3>Automatización de Procesos</h3>
+                    <p>Compara el antes y después de automatizar tareas manuales repetitivas</p>
+                    <button class="demo-launch-btn">Lanzar Demo</button>
+                    <span class="demo-badge">Comparativa</span>
+                </div>
+
+                <div class="demo-card" data-demo="monitoreo">
+                    <div class="demo-icon">📊</div>
+                    <h3>Monitoreo en Tiempo Real</h3>
+                    <p>Visualiza métricas clave actualizándose en vivo con alertas inteligentes</p>
+                    <button class="demo-launch-btn">Lanzar Demo</button>
+                    <span class="demo-badge">En Vivo</span>
+                </div>
+            </div>
+
+            <!-- Módulos Tab -->
+            <div class="demos-grid hidden" data-tab="modulos">
+                <div class="demo-card" data-demo="ecommerce">
+                    <div class="demo-icon">🛒</div>
+                    <h3>E-Commerce</h3>
+                    <p>Crea tu tienda online, añade productos y simula el proceso completo de compra</p>
+                    <button class="demo-launch-btn">Lanzar Demo</button>
+                    <span class="demo-badge">Interactiva</span>
+                </div>
+
+                <div class="demo-card" data-demo="erp">
+                    <div class="demo-icon">📦</div>
+                    <h3>ERP / WMS</h3>
+                    <p>Gestiona inventario, crea órdenes y visualiza el control de operaciones</p>
+                    <button class="demo-launch-btn">Lanzar Demo</button>
+                    <span class="demo-badge">Interactiva</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Modal Container -->
+    <div id="demoModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="demoContent"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-wrapper">
+                        <span class="logo-slash">/</span>
+                        <span class="logo-text-simple">Aionia</span>
+                    </div>
+                    <p>Transformando operaciones digitales</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navegación</h4>
+                        <a href="index.html">Inicio</a>
+                        <a href="index.html#services">Servicios</a>
+                        <a href="demos.html">Demos</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contacto</h4>
+                        <a href="mailto:contacto@aionia.com.mx">contacto@aionia.com.mx</a>
+                        <a href="tel:+52">+52 (XXX) XXX-XXXX</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aionia. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/demos.js"></script>
+</body>
+
+</html>

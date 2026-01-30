@@ -16,23 +16,23 @@
     --accent-blue: #3B82F6;
     --accent-purple: #8B5CF6;
     --border-color: #334155;
-    
+
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-mono: 'Space Mono', 'Courier New', monospace;
-    
+
     /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
     --spacing-xl: 6rem;
-    
+
     /* Border Radius */
     --radius-sm: 0.5rem;
     --radius-md: 1rem;
     --radius-lg: 1.5rem;
-    
+
     /* Shadows */
     --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
     --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
@@ -74,9 +74,12 @@ body {
 }
 
 @keyframes cursorBlink {
-    0%, 100% {
+
+    0%,
+    100% {
         opacity: 1;
     }
+
     50% {
         opacity: 0.3;
     }
@@ -101,6 +104,7 @@ body {
         width: 0;
         opacity: 0;
     }
+
     100% {
         width: auto;
         opacity: 1;
@@ -259,7 +263,28 @@ body {
 .service-card p {
     color: var(--text-secondary);
     line-height: 1.7;
+    margin-bottom: 1rem;
 }
+
+.demo-link {
+    display: inline-block;
+    color: var(--accent-yellow);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    border-radius: var(--radius-sm);
+}
+
+.demo-link:hover {
+    color: var(--bg-primary);
+    background: var(--accent-yellow);
+    border-color: var(--accent-yellow);
+    transform: translateX(5px);
+}
+
 
 /* Benefits Section */
 .benefits {
@@ -333,7 +358,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.module-checkbox:checked + .module-label {
+.module-checkbox:checked+.module-label {
     border-color: var(--accent-yellow);
     background: linear-gradient(135deg, rgba(255, 217, 61, 0.1) 0%, rgba(255, 217, 61, 0.05) 100%);
 }
@@ -493,27 +518,27 @@ body {
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1rem;
     }
-    
+
     .nav-links {
         gap: var(--spacing-sm);
     }
-    
+
     .form-row {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-content {
         grid-template-columns: 1fr;
     }
-    
+
     .footer-links {
         justify-content: flex-start;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
@@ -523,11 +548,11 @@ body {
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .logo-wrapper {
         font-size: 24px;
     }
-    
+
     .services-grid,
     .benefits-grid,
     .modules-grid {
