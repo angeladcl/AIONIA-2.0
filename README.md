@@ -142,6 +142,54 @@ vercel --prod
 
 Sube todos los archivos via FTP/SFTP a tu directorio web (`public_html`, `www`, etc.)
 
+### Dokploy
+
+Este proyecto está configurado para deployment automático en Dokploy usando Docker.
+
+**Pre-requisitos:**
+- Cuenta de Dokploy activa
+- Acceso al repositorio GitHub
+
+**Pasos:**
+
+1. **Crear Nuevo Proyecto en Dokploy**
+   - Ingresa a tu panel de Dokploy
+   - Click en "Create Project"
+   - Selecciona "Application"
+
+2. **Configurar Repositorio**
+   - Repository URL: `https://github.com/aloomushi-pixel/aionia-website.git`
+   - Branch: `main`
+   - Build Method: `Dockerfile`
+
+3. **Configurar Puertos**
+   - Container Port: `80`
+   - External Port: Asignado automáticamente por Dokploy
+
+4. **Deploy**
+   - Click en "Deploy"
+   - Espera a que el build complete (2-3 minutos)
+   - Dokploy asignará un dominio temporal (ej: `aionia-xxxxx.dokploy.app`)
+
+5. **Configurar Dominio Personalizado** (Opcional)
+   - En la configuración del proyecto, ve a "Domains"
+   - Añade `aionia.com.mx`
+   - Configura los registros DNS en tu proveedor:
+     - `A` record apuntando a la IP de Dokploy
+     - O `CNAME` record según indique Dokploy
+   - Habilita SSL automático (Let's Encrypt)
+
+**Características del Deployment:**
+- ✅ Build automático desde Dockerfile
+- ✅ Nginx optimizado con compresión gzip
+- ✅ Headers de seguridad configurados
+- ✅ Cache de assets estáticos (1 año)
+- ✅ SSL/TLS automático
+- ✅ Zero downtime deployments
+
+**Variables de Entorno:**
+No se requieren variables de entorno para este proyecto.
+
 ## 📈 Optimizaciones Futuras
 
 - [ ] Implementar backend para formulario de contacto
